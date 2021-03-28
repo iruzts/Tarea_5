@@ -19,6 +19,8 @@ class CreateProveedorTable extends Migration
             $table->string('direccion');
             $table->integer('telefono');
             $table->string('email');
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 
